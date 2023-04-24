@@ -17,7 +17,7 @@ const routes: Routes = [
 	{path: "servicio", component: HwServiceComponent},
 	{path: "directivas", component: DirectivesComponent},
 	{path: "single/:id", component: SingleParamComponent},
-	{path: "multi/:action/:id", component: MultiParamComponent},
+	{path: "multi", component: MultiParamComponent},
 ];
 
 @NgModule({

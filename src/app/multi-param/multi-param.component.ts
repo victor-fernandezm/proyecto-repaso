@@ -10,7 +10,7 @@ export class MultiParamComponent {
 	idParam: number;
 	actionParam: number;
 	constructor(private route: ActivatedRoute) {
-		this.idParam = route.snapshot.params['id'];
-		this.actionParam = route.snapshot.params['action'];
+		this.idParam = route.snapshot.queryParams['id'];
+		this.actionParam = route.snapshot.queryParams['action'];
 	}
 }
