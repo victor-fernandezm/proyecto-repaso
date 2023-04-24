@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { OneWayBindingComponent } from './one-way-binding/one-way-binding.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
-    OneWayBindingComponent
+    OneWayBindingComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
