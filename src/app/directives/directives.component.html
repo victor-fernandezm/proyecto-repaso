@@ -1,0 +1,24 @@
+<h1>Directivas</h1>
+
+<div *ngIf="valor;else valorFalso">
+    <i>Dentro del *ngIf</i>
+</div>
+<ng-template #valorFalso>
+    <i>Fuera del *ngIf. Dentro del else</i>
+</ng-template>
+
+<ul>
+    <li *ngFor="let i of listaNums">Elemento de la lista: {{i}}</li>
+</ul>
+
+<label for="estado">Estado: </label>
+<select name="" id="estado" [(ngModel)]="triState">
+    <option value="{{pair[0]}}" *ngFor="let pair of tripleEstadoOptions">{{pair[1]}}</option>
+</select>
+
+<div [ngSwitch]="triState">
+    <div *ngSwitchCase="0">Seleccionaste: <i>SI</i></div>
+    <div *ngSwitchCase="1">Seleccionaste: <i>NO</i></div>
+    <div *ngSwitchCase="2">Seleccionaste un valor superpuesto entre si y no: <i>QUIZÁ</i></div>
+    <div *ngSwitchDefault><i>Esto nunca debería de salir. Si sale, reportalo.</i><br>Seleccionaste un valor desconocido.</div>
+</div>
