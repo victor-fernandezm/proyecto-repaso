@@ -5,6 +5,8 @@ import { OneWayBindingComponent } from './one-way-binding/one-way-binding.compon
 import { EventsComponent } from './events/events.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { HwServiceComponent } from './hw-service/hw-service.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { SingleParamComponent } from './single-param/single-param.component';
 
 const routes: Routes = [
 	{path: "interpolacion", component: InterpolationComponent},
@@ -12,6 +14,8 @@ const routes: Routes = [
 	{path: "eventos", component: EventsComponent},
 	{path: "twb", component: TwoWayBindingComponent},
 	{path: "servicio", component: HwServiceComponent},
+	{path: "directivas", component: DirectivesComponent},
+	{path: "single/:id", component: SingleParamComponent},
 ];
 
 @NgModule({

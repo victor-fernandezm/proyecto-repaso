@@ -10,6 +10,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { FormsModule } from '@angular/forms';
 import { HwServiceComponent } from './hw-service/hw-service.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { SingleParamComponent } from './single-param/single-param.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DirectivesComponent } from './directives/directives.component';
     EventsComponent,
     TwoWayBindingComponent,
     HwServiceComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    SingleParamComponent
   ],
   imports: [
     BrowserModule,
