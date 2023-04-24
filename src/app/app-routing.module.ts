@@ -8,6 +8,8 @@ import { HwServiceComponent } from './hw-service/hw-service.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { SingleParamComponent } from './single-param/single-param.component';
 import { MultiParamComponent } from './multi-param/multi-param.component';
+import { SingleParamSenderComponent } from './single-param-sender/single-param-sender.component';
+import { MultiParamSenderComponent } from './multi-param-sender/multi-param-sender.component';
 
 const routes: Routes = [
 	{path: "interpolacion", component: InterpolationComponent},
@@ -16,8 +18,10 @@ const routes: Routes = [
 	{path: "twb", component: TwoWayBindingComponent},
 	{path: "servicio", component: HwServiceComponent},
 	{path: "directivas", component: DirectivesComponent},
+	{path: "single", component: SingleParamSenderComponent},
 	{path: "single/:id", component: SingleParamComponent},
-	{path: "multi", component: MultiParamComponent},
+	{path: "multi", component: MultiParamSenderComponent},
+	{path: "multi/receive", component: MultiParamComponent},
 ];
 
 @NgModule({

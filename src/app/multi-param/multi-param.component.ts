@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MultiParamComponent {
 	idParam: number;
-	actionParam: number;
+	actionParam: string;
 	constructor(private route: ActivatedRoute) {
 		this.idParam = route.snapshot.queryParams['id'];
 		this.actionParam = route.snapshot.queryParams['action'];

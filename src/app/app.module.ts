@@ -12,6 +12,8 @@ import { HwServiceComponent } from './hw-service/hw-service.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { SingleParamComponent } from './single-param/single-param.component';
 import { MultiParamComponent } from './multi-param/multi-param.component';
+import { SingleParamSenderComponent } from './single-param-sender/single-param-sender.component';
+import { MultiParamSenderComponent } from './multi-param-sender/multi-param-sender.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MultiParamComponent } from './multi-param/multi-param.component';
     HwServiceComponent,
     DirectivesComponent,
     SingleParamComponent,
-    MultiParamComponent
+    MultiParamComponent,
+    SingleParamSenderComponent,
+    MultiParamSenderComponent
   ],
   imports: [
     BrowserModule,
