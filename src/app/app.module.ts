@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HwServiceComponent } from './hw-service/hw-service.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { SingleParamComponent } from './single-param/single-param.component';
+import { MultiParamComponent } from './multi-param/multi-param.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SingleParamComponent } from './single-param/single-param.component';
     TwoWayBindingComponent,
     HwServiceComponent,
     DirectivesComponent,
-    SingleParamComponent
+    SingleParamComponent,
+    MultiParamComponent
   ],
   imports: [
     BrowserModule,
