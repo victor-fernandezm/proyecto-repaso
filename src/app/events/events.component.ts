@@ -11,6 +11,6 @@ export class EventsComponent {
 	}
 
 	selectChanged(evt: any): void {
-		alert(`Valor actual del select: ${evt.target.value}`);
+		console.log(`Valor actual del select: ${evt.target.value}`);
 	}
 }
