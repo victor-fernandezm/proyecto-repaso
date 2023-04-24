@@ -14,6 +14,9 @@ import { SingleParamComponent } from './single-param/single-param.component';
 import { MultiParamComponent } from './multi-param/multi-param.component';
 import { SingleParamSenderComponent } from './single-param-sender/single-param-sender.component';
 import { MultiParamSenderComponent } from './multi-param-sender/multi-param-sender.component';
+import { CommListaNumsComponent } from './comm-lista-nums/comm-lista-nums.component';
+import { CommOperacionesNumComponent } from './comm-operaciones-num/comm-operaciones-num.component';
+import { CommEntradaNumComponent } from './comm-entrada-num/comm-entrada-num.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { MultiParamSenderComponent } from './multi-param-sender/multi-param-send
     SingleParamComponent,
     MultiParamComponent,
     SingleParamSenderComponent,
-    MultiParamSenderComponent
+    MultiParamSenderComponent,
+    CommListaNumsComponent,
+    CommOperacionesNumComponent,
+    CommEntradaNumComponent
   ],
   imports: [
     BrowserModule,

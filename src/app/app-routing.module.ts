@@ -10,6 +10,7 @@ import { SingleParamComponent } from './single-param/single-param.component';
 import { MultiParamComponent } from './multi-param/multi-param.component';
 import { SingleParamSenderComponent } from './single-param-sender/single-param-sender.component';
 import { MultiParamSenderComponent } from './multi-param-sender/multi-param-sender.component';
+import { CommListaNumsComponent } from './comm-lista-nums/comm-lista-nums.component';
 
 const routes: Routes = [
 	{path: "interpolacion", component: InterpolationComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
 	{path: "single/:id", component: SingleParamComponent},
 	{path: "multi", component: MultiParamSenderComponent},
 	{path: "multi/receive", component: MultiParamComponent},
+	{path: "comms", component: CommListaNumsComponent},
 ];
 
 @NgModule({

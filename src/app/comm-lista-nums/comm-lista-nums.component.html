@@ -1,0 +1,13 @@
+<h1>Comunicacion Padre-Hijo & Hijo-Padre</h1>
+<app-comm-entrada-num (numEvent)="addNum($event)"></app-comm-entrada-num>
+
+<table border="1" cellPadding="5">
+    <tr>
+        <th>Numero</th>
+        <th>Equivalencias</th>
+    </tr>
+    <tr *ngFor="let n of nums">
+        <td>{{n}}</td>
+        <td><app-comm-operaciones-num [num]="n"></app-comm-operaciones-num></td>
+    </tr>
+</table>
